@@ -5,13 +5,13 @@ interface ButtonProps {
   id?: string;
 }
 
-const Button = ({ onClick, className, value }: ButtonProps) => {
+const Button = (props: ButtonProps) => {
   return (
     <button
-      onClick={onClick}
-      className={className}
+      onClick={props.onClick}
+      className={props.className}
     >
-      {value}
+      {props.value}
     </button>
   );
 };
