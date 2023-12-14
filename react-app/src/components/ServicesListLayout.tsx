@@ -46,6 +46,48 @@ const ServicesListLayout = () => {
           to="/Services/PDFtoDocx"
         />
       </Card>
+      <Card className="card-service">
+        <Button
+          value="Custom button"
+          className="btn_custom"
+          to="/Services/PDFtoDocx"
+        />
+      </Card>
+      <Card className="card-service">
+        <Button
+          value="Custom button"
+          className="btn_custom"
+          to="/Services/PDFtoDocx"
+        />
+      </Card>
+      <Card className="card-service">
+        <Button
+          value="Custom button"
+          className="btn_custom"
+          to="/Services/PDFtoDocx"
+        />
+      </Card>
+      <Card className="card-service">
+        <Button
+          value="Custom button"
+          className="btn_custom"
+          to="/Services/PDFtoDocx"
+        />
+      </Card>
+      <Card className="card-service">
+        <Button
+          value="Custom button"
+          className="btn_custom"
+          to="/Services/PDFtoDocx"
+        />
+      </Card>
+      <Card className="card-service">
+        <Button
+          value="Custom button"
+          className="btn_custom"
+          to="/Services/PDFtoDocx"
+        />
+      </Card>
     </div>
   );
 };
