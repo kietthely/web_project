@@ -1,0 +1,21 @@
+.card-layout {
+  &-service {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .card-service {
+      flex: 0 0 calc(13% - 2px);
+      margin-bottom: 0.7rem;
+
+      &:nth-child(6n + 1) {
+        margin-left: 0;
+      }
+
+      &:nth-child(6n) {
+        margin-right: 0;
+      }
+    }
+  }
+}
+// add media to get a responsive card-layout
