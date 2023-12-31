@@ -1,0 +1,12 @@
+.card {
+  &-service {
+    border: 1px solid #bacdd8;
+    padding: 3rem;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 5px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    padding: 1.25rem;
+  }
+}
+// add media to get a responsive card
