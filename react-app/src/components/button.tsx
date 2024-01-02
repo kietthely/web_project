@@ -1,24 +1,12 @@
 import { Link } from "react-router-dom";
-interface ButtonProps {
-  onClick?: () => void;
-  className?: string;
-  value: string;
-  id?: string;
-  to?: string;
+
+interface ButtonProps extends React.ComponentPropsWithoutRef<typeof Link> {
+  children?: React.ReactNode;
 }
 
 const Button = (props: ButtonProps) => {
-  // if navigation link is not provided then return only the button.
-  return props.to ? (
-    <Link to={props.to}>
-      <button onClick={props.onClick} className={props.className}>
-        {props.value}
-      </button>
-    </Link>
-  ) : (
-    <button onClick={props.onClick} className={props.className}>
-      {props.value}
-    </button>
-  );
+  const { children, ...rest } = props;
+  return <Link {...rest}>{children}</Link>;
 };
+
 export default Button;
