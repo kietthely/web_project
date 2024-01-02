@@ -1,92 +1,68 @@
-import Button from "./Button";
+import Button from "./button";
 import Card from "./Card";
 const ServicesListLayout = () => {
   return (
     <div className="card-layout-service">
       <Card className="card-service">
-        <Button
-          value="Custom button"
-          className="btn_custom"
-          to="/Services/MergePDFs"
-        />
+        <Button className="btn-custom" to="/Services/MergePDFs">
+          Custom Button
+        </Button>
       </Card>
       <Card className="card-service">
-        <Button
-          value="Custom button"
-          className="btn_custom"
-          to="/Services/MergePDFs"
-        />
+        <Button className="btn-custom" to="/Services/MergePDFs">
+          Custom Button
+        </Button>
       </Card>
       <Card className="card-service">
-        <Button
-          value="Custom button"
-          className="btn_custom"
-          to="/Services/PDFtoDocx"
-        />
+        <Button className="btn-custom" to="/Services/PDFtoDocx">
+          Custom Button
+        </Button>
       </Card>
 
       <Card className="card-service">
-        <Button
-          value="Custom button"
-          className="btn_custom"
-          to="/Services/MergePDFs"
-        />
+        <Button className="btn-custom" to="/Services/MergePDFs">
+          Custom Button
+        </Button>
       </Card>
       <Card className="card-service">
-        <Button
-          value="Custom button"
-          className="btn_custom"
-          to="/Services/MergePDFs"
-        />
+        <Button className="btn-custom" to="/Services/MergePDFs">
+          Custom Button
+        </Button>
       </Card>
       <Card className="card-service">
-        <Button
-          value="Custom button"
-          className="btn_custom"
-          to="/Services/PDFtoDocx"
-        />
+        <Button className="btn-custom" to="/Services/PDFtoDocx">
+          Custom Button
+        </Button>
       </Card>
       <Card className="card-service">
-        <Button
-          value="Custom button"
-          className="btn_custom"
-          to="/Services/PDFtoDocx"
-        />
+        <Button className="btn-custom" to="/Services/PDFtoDocx">
+          Custom Button
+        </Button>
       </Card>
       <Card className="card-service">
-        <Button
-          value="Custom button"
-          className="btn_custom"
-          to="/Services/PDFtoDocx"
-        />
+        <Button className="btn-custom" to="/Services/PDFtoDocx">
+          Custom Button
+        </Button>
       </Card>
       <Card className="card-service">
-        <Button
-          value="Custom button"
-          className="btn_custom"
-          to="/Services/PDFtoDocx"
-        />
+        <Button className="btn-custom" to="/Services/PDFtoDocx">
+          Custom Button
+        </Button>
       </Card>
       <Card className="card-service">
-        <Button
-          value="Custom button"
-          className="btn_custom"
-          to="/Services/PDFtoDocx"
-        />
+        <Button className="btn-custom" to="/Services/PDFtoDocx">
+          Custom Button
+        </Button>
       </Card>
       <Card className="card-service">
-        <Button
-          value="Custom button"
-          className="btn_custom"
-          to="/Services/PDFtoDocx"
-        />
+        <Button className="btn-custom" to="/Services/PDFtoDocx">
+          Custom Button
+        </Button>
       </Card>
       <Card className="card-service">
-        <Button
-          value="Custom button"
-          className="btn_custom"
-          to="/Services/PDFtoDocx"
-        />
+        <Button className="btn-custom" to="/Services/PDFtoDocx">
+          Custom Button
+        </Button>
       </Card>
     </div>
   );
