@@ -26,20 +26,12 @@ $font-size: 14px;
   @include button-style(hsl(211, 100%, 50%));
   background: linear-gradient(to right, #34ebdf, #34ebc6);
 
-  &.basic {
+  &-faded-button {
     @include button-style(transparent, null);
-    color: black;
-    border: none;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease,
-      background-color 0.3s ease;
+    transition: opacity 1s ease, visibility 0.9s ease, background-color 1s ease;
 
     &:hover {
-      @include button-style(
-        hsl(211, 100%, 50%),
-        linear-gradient(to right, #34ebdf, #34ebc6)
-      );
+      @include button-style(hsl(211, 100%, 50%));
       opacity: 1;
       visibility: visible;
     }

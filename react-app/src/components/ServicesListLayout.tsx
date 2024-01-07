@@ -16,7 +16,7 @@ const ServicesListLayout = () => {
         <CardDescription>Description</CardDescription>
         <CardImg src="#" alt="Empty image"></CardImg>
         <CardLink to="/Services/MergePDFs">
-          <Button className="btn-custom basic">More</Button>
+          <Button className="btn-custom-faded-button">More</Button>
         </CardLink>
       </Card>
 
