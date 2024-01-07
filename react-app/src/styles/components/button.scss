@@ -1,12 +1,60 @@
-.btn {
-  &-custom {
-    background-color: hsl(211, 100%, 50%);
-    background: linear-gradient(to right, #34ebdf, #34ebc6);
+// Define common variables and mixins
+$primary-color: #007bff;
+$danger-color: #dc3545;
+$secondary-color: #4e5150;
+$info-color: #cbde61;
+$font-size: 14px;
+
+@mixin button-style($bg-color, $background: null) {
+  background-color: $bg-color;
+  color: white; // default value
+  border: none; // default value
+  padding: 10px 20px; // fixed value for consistency
+  border-radius: 6px; // fixed value for consistency
+  font-size: $font-size;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  @if $background != null {
+    background: $background;
+  }
+  &:hover {
+    background-color: darken($bg-color, 15%);
+  }
+}
+
+.btn-custom {
+  @include button-style(hsl(211, 100%, 50%));
+  background: linear-gradient(to right, #34ebdf, #34ebc6);
+
+  &.basic {
+    @include button-style(transparent, null);
     color: black;
     border: none;
-    padding: 10px 20px;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease,
+      background-color 0.3s ease;
+
+    &:hover {
+      @include button-style(
+        hsl(211, 100%, 50%),
+        linear-gradient(to right, #34ebdf, #34ebc6)
+      );
+      opacity: 1;
+      visibility: visible;
+    }
   }
+}
+
+.btn-primary {
+  @include button-style($primary-color);
+}
+.btn-secondary {
+  @include button-style($secondary-color);
+}
+.btn-info {
+  @include button-style($info-color);
+}
+.btn-danger {
+  @include button-style($danger-color);
 }

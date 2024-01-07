@@ -16,7 +16,7 @@ const ServicesListLayout = () => {
         <CardDescription>Description</CardDescription>
         <CardImg src="#" alt="Empty image"></CardImg>
         <CardLink to="/Services/MergePDFs">
-          <Button className="btn-custom">More</Button>
+          <Button className="btn-custom basic">More</Button>
         </CardLink>
       </Card>
 
@@ -28,7 +28,7 @@ const ServicesListLayout = () => {
         <CardImg src="#" alt="Empty image"></CardImg>
 
         <CardLink to="/Services/MergePDFs">
-          <Button className="btn-custom">More</Button>
+          <Button className="btn-primary">More</Button>
         </CardLink>
       </Card>
       <Card className="card-service">
@@ -38,7 +38,7 @@ const ServicesListLayout = () => {
 
         <CardImg src="#" alt="Empty image"></CardImg>
         <CardLink to="/Services/PDFtoDocx">
-          <Button className="btn-custom">More</Button>
+          <Button className="btn-info">More</Button>
         </CardLink>
       </Card>
     </div>
