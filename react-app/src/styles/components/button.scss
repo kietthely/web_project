@@ -5,18 +5,16 @@ $secondary-color: #4e5150;
 $info-color: #cbde61;
 $font-size: 14px;
 
-@mixin button-style($bg-color, $background: null) {
+@mixin button-style($bg-color) {
   background-color: $bg-color;
-  color: white; // default value
+  color: black; // default value
   border: none; // default value
   padding: 10px 20px; // fixed value for consistency
   border-radius: 6px; // fixed value for consistency
   font-size: $font-size;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  @if $background != null {
-    background: $background;
-  }
+
   &:hover {
     background-color: darken($bg-color, 15%);
   }
@@ -24,10 +22,9 @@ $font-size: 14px;
 
 .btn-custom {
   @include button-style(hsl(211, 100%, 50%));
-  background: linear-gradient(to right, #34ebdf, #34ebc6);
 
   &-faded-button {
-    @include button-style(transparent, null);
+    @include button-style(transparent);
     transition: opacity 1s ease, visibility 0.9s ease, background-color 1s ease;
 
     &:hover {
